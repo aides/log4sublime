@@ -11,32 +11,44 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.interpolated.log4net</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.log4net</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.log4net</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.log4net</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.log4net</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>ERROR log message.</string>
+			<string>Default log4net log string.</string>
 			<key>match</key>
-			<string>ERROR</string>
+			<string>^(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3}\s)\|\s(\[\d+\])\s\|\s(ALL|DEBUG|INFO|WARN|ERROR|FATAL|OFF)\s\|\s(.*)\s\|\s(.*)\s\|</string>
 			<key>name</key>
-			<string>keyword.log4net</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Thread ID.</string>
-			<key>match</key>
-			<string>\|\s\[\d+\]\s\|</string>
-			<key>name</key>
-			<string>constant.numeric.log4net</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Date Time in default format.</string>
-			<key>match</key>
-			<string>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3}\s</string>
-			<key>name</key>
-			<string>string.interpolated.log4net</string>
+			<string>comment.line.log4net</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.syntax_name</string>
+	<string>source.log4net</string>
 	<key>uuid</key>
 	<string>2be013b9-e0ed-4599-9f6c-10ec27b6bbb5</string>
 </dict>
