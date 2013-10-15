@@ -42,7 +42,59 @@
 			<key>comment</key>
 			<string>Default log4net log string.</string>
 			<key>match</key>
-			<string>^(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3}\s)\|\s(\[\d+\])\s\|\s(ALL|DEBUG|INFO|WARN|ERROR|FATAL|OFF)\s\|\s(.*)\s\|\s(.*)\s\|</string>
+			<string>^([^\|]*)\|\s(\[\d+\])\s\|\s(WARN\s|ERROR|FATAL)\s\|\s(.*)\s\|\s(.*)\s\|</string>
+			<key>name</key>
+			<string>comment.line.log4net</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.interpolated.log4net</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.log4net</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.log4net</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.log4net</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.log4net</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Default log4net log string.</string>
+			<key>match</key>
+			<string>^([^\|]*)\|\s(\[\d+\])\s\|\s(ALL\s\s|DEBUG|INFO\s)\s\|\s(.*)\s\|\s(.*)\s\|</string>
+			<key>name</key>
+			<string>comment.line.log4net</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.interpolated.log4net</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Default log4net log string.</string>
+			<key>match</key>
+			<string>^[^\d].*</string>
 			<key>name</key>
 			<string>comment.line.log4net</string>
 		</dict>
